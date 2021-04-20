@@ -10,6 +10,9 @@
   "dependencies": {
     "@headlessui/react": "^1.0.0",
     "@heroicons/react": "^1.0.1",
+    "@hookstate/core": "^3.0.7",
+    "@hookstate/persistence": "^3.0.0",
+    "axios": "^0.21.1",
     "next": "^10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"

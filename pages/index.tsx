@@ -1,16 +1,15 @@
+import { useState } from '@hookstate/core';
 import Head from 'next/head';
-import React from 'react';
+import { useRouter } from 'next/router';
+import React, { useEffect } from 'react';
 import Example from '../components/Example';
 
 const Home: React.FC = () => {
   return (
     <div className='container'>
       <Head>
-        <title>Create Next App</title>
-        <link rel='icon' href='/favicon.ico' />
-        <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
+        <title>Landing page</title>
       </Head>
-
       <Example />
     </div>
   );

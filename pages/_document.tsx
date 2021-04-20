@@ -1,5 +1,10 @@
-import Document, { DocumentContext } from 'next/document';
-import Head from 'next/head';
+import Document, {
+  DocumentContext,
+  Html,
+  Main,
+  NextScript,
+  Head,
+} from 'next/document';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -10,11 +15,16 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Head>
-        <title>Create Next App</title>
-        <link rel='icon' href='/favicon.ico' />
-        <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
-      </Head>
+      <Html>
+        <Head>
+          <link rel='icon' href='/favicon.ico' />
+          <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
     );
   }
 }
